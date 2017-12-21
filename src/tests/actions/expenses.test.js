@@ -15,7 +15,7 @@ import database from '../../firebase/firebase';
 
 const createMockStore = configureMockStore([thunk]);
 const uid = 'thisismytestuid';
-const wdefaultAuthState = {auth: { uid }};
+const defaultAuthState = {auth: { uid }};
 
 beforeEach((done) => {
     const expensesData = {};

@@ -8,6 +8,10 @@
 
 .select {
     @extend .text-input;
+    width: 245px;
+    @media (min-width: $desktop-breakpoint) {
+        width: 111px;
+    }
 }
 
 .textarea {
