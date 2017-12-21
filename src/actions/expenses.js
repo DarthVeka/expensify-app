@@ -76,8 +76,8 @@ export const startSetExpenses = () => {
                         id: childSnapshot.key,
                         ...childSnapshot.val()
                     });
-                    dispatch(setExpenses(expenses));
                 });
+                dispatch(setExpenses(expenses));
             });
     };
 };
