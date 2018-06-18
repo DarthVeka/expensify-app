@@ -9,7 +9,9 @@
     "dev-server": "webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "npm run build:prod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -56,6 +58,8 @@
     "sweetalert2": "^7.1.2",
     "uuid": "^3.1.0",
     "validator": "9.1.1",
-    "webpack": "3.1.0"
-  }
+    "webpack": "3.1.0",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
